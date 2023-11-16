@@ -1,7 +1,8 @@
 import React from "react";
+import Main from "../components/Main";
 
 const Channel = () => {
-  return <div>Channel</div>;
+  return <Main>Channel</Main>;
 };
 
 export default Channel;
