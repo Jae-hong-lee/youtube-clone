@@ -1,20 +1,19 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Main from "./components/section/Main";
 
-import Home from "./pages/Home";
-import Today from "./pages/Today";
-import Developer from "./pages/Developer";
-import Webd from "./pages/Webd";
-import Website from "./pages/Website";
-import Gsap from "./pages/Gsap";
-import Port from "./pages/Port";
-import Youtube from "./pages/Youtube";
-import Channel from "./pages/Channel";
-import Video from "./pages/Video";
-import Search from "./pages/Search";
-import Not from "./pages/Not";
-
-import Main from "./components/Main";
+// import Home from "./pages/Home";
+// import Today from "./pages/Today";
+// import Developer from "./pages/Developer";
+// import Webd from "./pages/Webd";
+// import Website from "./pages/Website";
+// import Gsap from "./pages/Gsap";
+// import Port from "./pages/Port";
+// import Youtube from "./pages/Youtube";
+// import Channel from "./pages/Channel";
+// import Video from "./pages/Video";
+// import Search from "./pages/Search";
+// import Not from "./pages/Not";
 
 const Home = lazy(() => import("./pages/Home"));
 const Today = lazy(() => import("./pages/Today"));
