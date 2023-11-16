@@ -1,7 +1,8 @@
 import React from "react";
+import Main from "../components/Main";
 
 const Today = () => {
-  return <div>Today</div>;
+  return <Main>Today</Main>;
 };
 
 export default Today;

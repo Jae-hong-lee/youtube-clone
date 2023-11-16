@@ -1,7 +1,8 @@
 import React from "react";
+import Main from "../components/Main";
 
 const Developer = () => {
-  return <div>Developer</div>;
+  return <Main>Developer</Main>;
 };
 
 export default Developer;
