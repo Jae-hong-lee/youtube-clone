@@ -1,4 +1,4 @@
-import { CiBaseball } from "react-icons/ci";
+import { CiFaceSmile } from "react-icons/ci";
 import { CiCoins1 } from "react-icons/ci";
 import { CiBoxes } from "react-icons/ci";
 import { CiBullhorn } from "react-icons/ci";
@@ -15,7 +15,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 export const headerMenus = [
   {
     title: "재홍님의 유튜브",
-    icon: <CiBaseball />,
+    icon: <CiFaceSmile />,
     src: "/",
   },
   {
@@ -105,7 +105,7 @@ export const searchKeyword = [
 export const snsLink = [
   {
     title: "github",
-    url: "https://github.com/webstoryboy",
+    url: "https://github.com/Jae-hong-lee/youtube-clone",
     icon: <AiFillGithub />,
   },
   {
@@ -118,9 +118,9 @@ export const snsLink = [
     url: "https://codepen.io/webstoryboy",
     icon: <AiOutlineCodepen />,
   },
-  {
-    title: "instagram",
-    url: "https://www.instagram.com/webstoryboy",
-    icon: <AiOutlineInstagram />,
-  },
+  // {
+  //   title: "instagram",
+  //   url: "https://www.instagram.com/webstoryboy",
+  //   icon: <AiOutlineInstagram />,
+  // },
 ];
