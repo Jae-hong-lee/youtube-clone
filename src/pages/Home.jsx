@@ -6,6 +6,7 @@ import Webd from "../components/contents/Webd";
 import Website from "../components/contents/Website";
 import Gsap from "../components/contents/Gsap";
 import Youtube from "../components/contents/Youtube";
+import VideoSlider from "../components/video/VideoSlider";
 
 const Home = () => {
   return (
@@ -15,10 +16,12 @@ const Home = () => {
     >
       <Today />
       <Developer />
-      {/* <Webd /> */}
-      {/* <Website /> */}
-      {/* <Gsap /> */}
+
+      <Webd />
+      <Website />
+      <Gsap />
       <Youtube />
+      <VideoSlider id="youtube" />
     </Main>
   );
 };
