@@ -1,8 +1,8 @@
 import { CiFaceSmile } from "react-icons/ci";
 import { CiMedal } from "react-icons/ci";
-// import { CiBoxes } from "react-icons/ci";
-// import { CiBullhorn } from "react-icons/ci";
-// import { CiCoffeeCup } from "react-icons/ci";
+import { CiBoxes } from "react-icons/ci";
+import { CiBullhorn } from "react-icons/ci";
+import { CiCoffeeCup } from "react-icons/ci";
 import { CiFries } from "react-icons/ci";
 import { CiYoutube } from "react-icons/ci";
 
@@ -26,21 +26,21 @@ export const headerMenus = [
     icon: <CiMedal />,
     src: "/developer",
   },
-  // {
-  //   title: "웹디자인기능사",
-  //   icon: <CiBoxes />,
-  //   src: "/webd",
-  // },
-  // {
-  //   title: "웹표준 사이트",
-  //   icon: <CiBullhorn />,
-  //   src: "/website",
-  // },
-  // {
-  //   title: "GSAP Parallax",
-  //   icon: <CiCoffeeCup />,
-  //   src: "/gsap",
-  // },
+  {
+    title: "웹디자인기능사",
+    icon: <CiBoxes />,
+    src: "/webd",
+  },
+  {
+    title: "웹표준 사이트",
+    icon: <CiBullhorn />,
+    src: "/website",
+  },
+  {
+    title: "GSAP Parallax",
+    icon: <CiCoffeeCup />,
+    src: "/gsap",
+  },
   {
     title: "유튜브 클론 사이트",
     icon: <CiFries />,
