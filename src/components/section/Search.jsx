@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Search = () => {
+  const [searchKeyword, setSearchKeyword] = useState("");
+
   return (
     <div id="search">
       <div className="search__inner">
@@ -18,4 +20,5 @@ const Search = () => {
     </div>
   );
 };
+
 export default Search;
