@@ -6,7 +6,6 @@ const Search = () => {
   const navigate = useNavigate();
 
   const handleSearch = () => {
-    console.log(searchKeyword);
     if (searchKeyword) {
       navigate(`/search/${searchKeyword}`);
       setSearchKeyword("");
