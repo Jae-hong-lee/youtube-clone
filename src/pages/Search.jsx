@@ -11,20 +11,6 @@ const Search = () => {
   const [nextPageToken, setNextPageToken] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // YoutubeAPI
-  //   useEffect(() => {
-  //     fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q=${searchID}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
-  //         .then(response => response.json())
-  //         .then(result => {
-  //             console.log(result);
-  //             setVideos(result.items);
-  //         })
-  //         .catch(error => console.log(error));
-  //     setVideos([]);
-  //     fetchVidoes(searchID);
-  //     setLoading(true);
-  // }, [searchID]);
-
   useEffect(() => {
     setVideos([]);
     fetchVideos(searchID);
@@ -32,7 +18,9 @@ const Search = () => {
   }, [searchID]);
 
   const fetchVideos = (query, pageToken = "") => {
-    fetchFromAPI(`search?part=snippet&q=${query}&pageToken=${pageToken}`)
+    fetchFromAPI(
+      `search?part=snippet&type=video&q=${query}&pageToken=${pageToken}`
+    )
       .then((data) => {
         setNextPageToken(data.nextPageToken);
         setVideos((prevVideos) => [...prevVideos, ...data.items]);
