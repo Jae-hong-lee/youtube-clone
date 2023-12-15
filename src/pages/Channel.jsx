@@ -16,7 +16,7 @@ const Channel = () => {
   const [channelVideo, setChannelVideo] = useState([]);
   const [loading, setLoading] = useState(true);
   const [nextPageToken, setNextPageToken] = useState(null);
-
+  console.log(channelDetail);
   useEffect(() => {
     const fetchResults = async () => {
       try {

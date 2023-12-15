@@ -5,6 +5,7 @@ import { CiBullhorn } from "react-icons/ci";
 import { CiCoffeeCup } from "react-icons/ci";
 import { CiFries } from "react-icons/ci";
 import { CiYoutube } from "react-icons/ci";
+import { CiPizza } from "react-icons/ci";
 
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineCodepen } from "react-icons/ai";
@@ -45,6 +46,11 @@ export const headerMenus = [
     title: "유튜브 클론 사이트",
     icon: <CiFries />,
     src: "/youtube",
+  },
+  {
+    title: "CalmDownMan",
+    icon: <CiPizza />,
+    src: "/Calmdownman/침착맨",
   },
 ];
 

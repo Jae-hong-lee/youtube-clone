@@ -12,6 +12,7 @@ const Youtube = lazy(() => import("./pages/Youtube"));
 const Channel = lazy(() => import("./pages/Channel"));
 const Video = lazy(() => import("./pages/Video"));
 const Search = lazy(() => import("./pages/Search"));
+const Calmdownman = lazy(() => import("./pages/Calmdownman"));
 const Not = lazy(() => import("./pages/Not"));
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/channel/:channelID" element={<Channel />} />
           <Route path="/video/:videoID" element={<Video />} />
           <Route path="/search/:searchID" element={<Search />} />
+          <Route path="/calmdownman/:calmdownmanID" element={<Calmdownman />} />
           <Route path="/*" element={<Not />} />
         </Routes>
       </Suspense>

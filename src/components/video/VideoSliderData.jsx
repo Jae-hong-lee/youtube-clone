@@ -7,7 +7,8 @@ import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
 
-const VideoSlider = ({ videos, title, id }) => {
+const VideoSliderData = ({ videos, title, id }) => {
+  // console.log("VideoSlider", videos);
   // 로딩효과
   const [loading, setLoading] = useState(true);
 
@@ -18,10 +19,10 @@ const VideoSlider = ({ videos, title, id }) => {
     }, 500);
   }, []);
 
-  const youtubeClass = loading ? "isLoading" : "isLoaded";
+  const CalmdownmanClass = loading ? "isLoading" : "isLoaded";
 
   return (
-    <section id={id} className={youtubeClass}>
+    <section id={id} className={CalmdownmanClass}>
       <h2>{title}</h2>
 
       <div className="video__slider">
@@ -55,10 +56,10 @@ const VideoSlider = ({ videos, title, id }) => {
             <SwiperSlide key={key}>
               <div className="video" key={key}>
                 <div className="video__thumb play__icon">
-                  <Link to={`/video/${video.videoId || video.id.videoId}`}>
+                  <Link to={`/video/${video.id.videoId}`}>
                     <img
-                      src={video.img || video.snippet.thumbnails.high.url}
-                      alt={video.title || video.snippet.title}
+                      src={video.snippet.thumbnails.high.url}
+                      alt={video.snippet.title}
                     />
                   </Link>
                 </div>
@@ -71,4 +72,4 @@ const VideoSlider = ({ videos, title, id }) => {
   );
 };
 
-export default VideoSlider;
+export default VideoSliderData;
