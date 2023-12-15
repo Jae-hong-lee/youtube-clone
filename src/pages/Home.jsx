@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Main from "../components/section/Main";
 import Today from "../components/contents/Today";
 import Developer from "../components/contents/Developer";
 import VideoSlider from "../components/video/VideoSlider";
+// import VideoSliderData from "../components/video/VideoSliderData";
 
 import { webdText } from "../data/webd";
 import { websiteText } from "../data/website";
@@ -10,8 +11,26 @@ import { gsapText } from "../data/gsap";
 import { youtubeText } from "../data/youtube";
 import { developerText } from "../data/developer";
 import { todayText } from "../data/today";
+import { fetchFromAPI } from "../utils/api";
 
 const Home = () => {
+  const [videos, setVideos] = useState([]);
+
+  useEffect(() => {
+    setVideos([]);
+    fetchData("침착맨");
+  }, []);
+
+  const fetchData = (query) => {
+    fetchFromAPI(`search?part=snippet&type=video&q=${query}`)
+      .then((data) => {
+        setVideos((prevVideos) => [...prevVideos, ...data.items]);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  };
+
   return (
     <Main
       title="재홍님의 유튜브"
@@ -45,6 +64,11 @@ const Home = () => {
         videos={youtubeText}
         title="😱 지금 이 코딩을 영상으로"
         id="youtube"
+      />
+      <VideoSlider
+        videos={videos}
+        title="🤙 우리 모두 침착하자"
+        id="calmdownman"
       />
     </Main>
   );
