@@ -19,7 +19,10 @@
       animation: ani 20s 20s ease-in-out infinite;
     }
 
-    span {
+    // 홈 화면과 햄버거 메뉴 차이두기
+    a {
+      padding: 0px;
+      margin: 0px;
       font-size: 20px;
       line-height: 1;
       font-weight: 900;
