@@ -15,7 +15,6 @@ YouTube Data API를 활용하여 외부 데이터를 가져오는 방법을 익�
 ## 📖 링크
 
 > 🔗 배포링크: https://webs-youtube-hong.vercel.app/ </br>
-> 🔗 프로젝트 문서: [문서 바로가기](https://www.notion.so/edfce5e9f0f1445d806bcf031016c6a0?pvs=4)
 
 ## ✔️ 사용 기술
 
@@ -36,16 +35,42 @@ yarn(5.1.1),react(18.2.0), react-router-dom(6.16.0), axios(1.5.1), react-helmet-
 
 ## ✔️ 시연영상
 
-### Home
+### 홈
+
+![Home](https://github.com/Jae-hong-lee/youtube-clone/assets/72030487/6585d7db-6d3c-499d-95d2-95baeea5b325)
 
 ### 오늘의 추천영상
 
-### 검색화면
+![추천영상](https://github.com/Jae-hong-lee/youtube-clone/assets/72030487/8375ee54-467e-49f6-998a-74adfd9a3b71)
 
-### 동영상목록
+### 개발자추천
 
-### 개발자추천목록
+![개발자추천](https://github.com/Jae-hong-lee/youtube-clone/assets/72030487/1ec76d74-c7d4-4f57-b3aa-f811b025d1ac)
 
-### 비디오 상세페이지
+### 일반페이지
 
-### Not
+![유튜브클론코딩](https://github.com/Jae-hong-lee/youtube-clone/assets/72030487/7dc590fb-9a74-4875-bfc7-e9fefdcec9bd)
+
+### 검색
+
+![검색](https://github.com/Jae-hong-lee/youtube-clone/assets/72030487/0c8130a7-d6ac-4e5c-982c-f7f1b07fba3e)
+
+### 태그검색
+
+![태그검색](https://github.com/Jae-hong-lee/youtube-clone/assets/72030487/5b998aff-3ba8-4521-9517-10224f7ec050)
+
+### 채널 페이지
+
+![채널](https://github.com/Jae-hong-lee/youtube-clone/assets/72030487/b75a6c18-81b1-4330-a43e-82a3cfb4374e)
+
+### 비디오 페이지
+
+![비디오상세](https://github.com/Jae-hong-lee/youtube-clone/assets/72030487/055822c0-ffb5-47a8-bbc6-726cef38c81a)
+
+#### 반응형
+
+![반응형](https://github.com/Jae-hong-lee/youtube-clone/assets/72030487/51d5b30e-97d2-4115-9d58-13bf4d9cf032)
+
+| 반응형 모바일                                                                                                        | 반응형 모바일(햄버거 메뉴)                                                                                              |
+| -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| ![반응형1](https://github.com/Jae-hong-lee/youtube-clone/assets/72030487/d4e2412c-69cf-4ac3-bc6f-4ee4870dbb68) | ![햄버거메뉴](https://github.com/Jae-hong-lee/youtube-clone/assets/72030487/4984ce70-c0e1-4b17-bf0a-a2e190025a2c) |
